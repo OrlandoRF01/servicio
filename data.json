@@ -1,0 +1,7 @@
+{"servicio":[
+    {"id":1,
+    "tipoMantenimiento": "COMPLETO",
+    "ampliacionRAM": "GB16",
+    "aumentoAlmacenamiento": "TB1",
+    "reparaciones": ["BATERIA","PANTALLA"]}
+    ]}
