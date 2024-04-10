@@ -56,15 +56,6 @@ app.get('/servicio/:id', (req, res) => {
     res.json(sparePart);
 });
 
-app.put('/total_servicios/:total', (req, res) => {
-    const data = readData(); // Leer los datos del archivo JSON
-    const total = parseInt(req.params.total); // Obtener el nuevo total de servicios desde los parámetros de la URL
-    data.total_servicios = total; // Actualizar el total de servicios en los datos
-    writeData(data); // Escribir los datos actualizados de vuelta al archivo JSON
-    res.json({ message: 'Total de servicios actualizado correctamente' }); // Responder con un mensaje de éxito
-});
-
-
 app.post('/servicio', (req, res) => {
     const data = readData();
     const body = req.body;
