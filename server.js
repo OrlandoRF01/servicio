@@ -93,7 +93,7 @@ app.delete('/servicio/:id', (req, res) => {
 
 app.get('/sumaTotal', (req, res) => {
     const data = readData();
-    const totalSum = data.servicio.reduce((sum, taco) => sum + servicio.Total, 0);
+    const totalSum = data.servicio.reduce((sum, servicio) => sum + servicio.Total, 0);
     res.json({ result: totalSum });
 });
 
