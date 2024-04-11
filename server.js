@@ -91,6 +91,12 @@ app.delete('/servicio/:id', (req, res) => {
     res.json({ message: "Spare part deleted successfully" });
 });
 
+app.get('/sumaTotal', (req, res) => {
+    const data = readData();
+    const totalSum = data.servicio.reduce((sum, taco) => sum + taco.precio_total, 0);
+    res.json({ result: totalSum });
+});
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
