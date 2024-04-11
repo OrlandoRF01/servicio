@@ -3,6 +3,6 @@
     "tipoMantenimiento": "COMPLETO",
     "ampliacionRAM": "GB16",
     "aumentoAlmacenamiento": "TB1",
-    "reparaciones": ["BATERIA","PANTALLA"]
+    "reparaciones": ["BATERIA","PANTALLA"],
     "Total": 720}
     ]}
